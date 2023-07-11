@@ -1,0 +1,157 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    .page {
+        margin-top: 3rem;
+        .content {
+            border-radius: 1rem;
+            padding: 2rem 2.5rem;
+            background-color: #fff;
+            .btn:hover, a:hover {
+                opacity: 0.9;
+            }
+            .page-title {
+                float: left;
+            }
+        }
+    }
+}
+
+// SITE NAVIGATION
+.site-nav {
+    background-color: #fff;
+    box-shadow: 0px 0px 6px -4px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            padding: 10px;
+        }
+        .menu{
+            .nav-list {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    a {
+                        display: block;
+                        padding: 14px 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FORMS
+.form {
+    .form-group {
+        label {
+            vertical-align: top;
+            min-width: 150px;
+            max-width: 150px;
+        }
+        .text-input {
+            &[type=text],&[type=email],&[type=password],&[type=number] {
+                min-width: 170px;
+                max-width: 170px;
+                font-size: 14px;
+                &.desc {
+                    min-height: 100px;
+                }
+            }
+        }
+        select {
+            min-width: 170px;
+        }
+        &.full {
+            display: grid;
+        }
+    }
+}
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .return {
+        color: #000;
+    }
+    &.solo {
+        justify-content: end;
+    }
+    .btn-style {
+        max-width: max-content;
+        color: #fff;
+        background-color: #008B8B;
+        border-color: #008B8B;
+        border-radius: 0.25rem;
+        &:hover {
+            color: #000;
+            background-color: #00A3A3;
+            border-color: #00A3A3;
+        }
+    }
+}
+.btn.pass-change {
+    border: 1px solid #000;
+}
+
+// TABLES
+.styled-table {
+    font-size: 0.9em;
+    min-width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 6px -4px;
+    thead tr {
+        background-color: #008B8B;
+        color: #ffffff;
+        text-align: left;
+    }
+    tbody tr {
+        border-bottom: 1px solid #dddddd;
+        &:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+    }
+    th, td {
+        padding: 12px 15px;
+        word-break: break-word;
+    }
+}
+
+// TITLE WITH BUTTON
+.title-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+// CARD LIST
+.card-list {
+    list-style: none;
+    padding: 0;
+    .sports-card {
+        padding: 1rem 2rem;
+        margin-bottom: 1rem;
+        background-color: #dcdcdc;
+        border-radius: 0.5rem;
+        .group {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            h4 {
+                min-width: 200px;
+            }
+        }
+        .below {
+            display: flex;
+            justify-content: space-between;
+        }
+        p {
+            margin-bottom: 0.5rem; 
+        }
+    }
+}
